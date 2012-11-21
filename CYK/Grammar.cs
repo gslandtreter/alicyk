@@ -82,5 +82,49 @@ namespace CYK
 
             rules.Add(ruleToAdd);
         }
+
+        public bool IsTerminal(string word)
+        {
+            foreach (string terminal in terminals)
+            {
+                if (terminal.Equals(word))
+                    return true;
+            }
+
+            return false;
+        }
+
+        public bool IsVariable(string word)
+        {
+            foreach (string variable in variables)
+            {
+                if (variable.Equals(word))
+                    return true;
+            }
+
+            return false;
+        }
+
+        public bool IsStartingRule(string word)
+        {
+            return startingRule.Equals(word) ? true : false;
+        }
+
+        public bool WordBelongsToGrammar(string word)
+        {
+            return IsTerminal(word);
+        }
+
+        public List<Rule> GetRules(string word)
+        {
+            List<Rule> returnValue = new List<Rule>();
+
+            foreach (Rule rule in rules)
+            {
+                if (rule.rule.Equals(word))
+                    returnValue.Add(rule);
+            }
+            return returnValue;
+        }
     }
 }

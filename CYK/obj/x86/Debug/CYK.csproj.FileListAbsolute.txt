@@ -7,3 +7,12 @@ d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\bin\Debug\CYK.exe
 d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\bin\Debug\CYK.pdb
 d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.exe
 d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.pdb
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.exe
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.pdb
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\bin\Debug\CYK.exe
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\bin\Debug\CYK.pdb
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Form1.resources
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.write.1.tlog

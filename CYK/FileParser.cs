@@ -18,7 +18,6 @@ namespace CYK
 
         public bool Exists()
         {
-
             if(File.Exists(fileName))
                 return true;
 
