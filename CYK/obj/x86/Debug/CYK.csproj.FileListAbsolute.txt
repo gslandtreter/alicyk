@@ -1,0 +1,9 @@
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.Form1.resources
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\bin\Debug\CYK.exe
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\bin\Debug\CYK.pdb
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.exe
+d:\gustavo\documentos\visual studio 2010\Projects\CYK\CYK\obj\x86\Debug\CYK.pdb
