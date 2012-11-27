@@ -26,6 +26,7 @@ namespace CYK
 
         void DoProcessing()
         {
+            //TCP ends here
             string[] words = Regex.Split(textBox1.Text, @"\W+");
 
             wordCount = words.Length;
@@ -37,6 +38,7 @@ namespace CYK
                     cykMatrix[i, n] = new List<string>();
 
 
+            ////////// Checando se todas as palavras sao terminais pertencentes a gramatica
 
             foreach (string word in words)
             {
@@ -48,38 +50,87 @@ namespace CYK
             }
 
 
-            ///////// Algoritmo copiado do livro
+            ///////// Algoritmo copiado do livro abç blauth
 
-            for (int i = 0; i < wordCount; i++) //Etapa 1
+            for (int r = 0; r < wordCount; r++) //Etapa 1
             {
-                foreach (Rule rule in mGrammar.GetRules(words[i]))
-                    cykMatrix[i, 0].Add(rule.name);
+                foreach (Rule rule in mGrammar.GetRules(words[r]))
+                    cykMatrix[r, 0].Add(rule.name);
             }
 
-            for (int s = 1; s < wordCount; s++) //Etapa 2
+            for (int s = 1; s < wordCount + 1; s++) //Etapa 2
             {
-                for (int r = 0; r < wordCount - s + 1; r++)
+                for (int r = 0; r < wordCount - s; r++)
                 {
-                    //Clear node
-                    for (int k = 0; k < s - 1; k++)
+                    for (int k = 0; k <= s - 1; k++)
                     {
                         List<string> rulesA = cykMatrix[r, k];
-                        List<string> rulesB = cykMatrix[r + k, s - k];
+                        List<string> rulesB = cykMatrix[r + k + 1, s - k - 1];
+
+                        if (rulesA.Count != 0 && rulesB.Count != 0) //Ambas as celulas contem regras
+                        {
+                            foreach (string ruleA in rulesA)
+                            {
+                                foreach (string ruleB in rulesB)
+                                {
+                                    string composedRule = ruleA + "," + ruleB; //Compondo as regras conforme notacao presente no arquivo de entrada
+
+                                    List<Rule> rules = mGrammar.GetRules(composedRule);
+                                    foreach (Rule ruleFound in rules)
+                                    {
+                                        if (!cykMatrix[r, s].Contains(ruleFound.name)) // Celula nao contem regra
+                                            cykMatrix[r, s].Add(ruleFound.name);
+                                    }
+                                }
+                            }
+                        }
+                        else if (rulesA.Count != 0) //Somente a celula A contem regras
+                        {
+                            foreach (string rule in rulesA)
+                            {
+                                List<Rule> rules = mGrammar.GetRules(rule);
+                                foreach (Rule ruleFound in rules)
+                                {
+                                    if (!cykMatrix[r, s].Contains(ruleFound.name)) // Celula nao contem regra
+                                        cykMatrix[r, s].Add(ruleFound.name);
+                                }
+                            }
+                        }
+                        else if (rulesB.Count != 0) //Somente a celula B contem regras
+                        {
+                            foreach (string rule in rulesB)
+                            {
+                                List<Rule> rules = mGrammar.GetRules(rule);
+                                foreach (Rule ruleFound in rules)
+                                {
+                                    if (!cykMatrix[r, s].Contains(ruleFound.name)) // Celula nao contem regra
+                                        cykMatrix[r, s].Add(ruleFound.name);
+                                }
+                            }
+                        }
 
                         /*TODO:
-                         * - Fazer a composiçao das regras e checar se elas sao atingiveis por alguma regra da gramatica
-                         * - (do tipo S -> AB) para cada regra de A ou B
-                         * - Se sim, adicioná-la a lista de cykMatrix[r, s]
+                         * - Alterar matriz para conter as probabilidades
+                         * - Arvores de Derivacao
+                         * - Calculo de Probabilidade
+                         * - Bora fazer alguma coisa gosantos
+                         * - quero churros
                          */
-                        
                     }
                 }
             }
 
-                label1.Text = "Tudo OK!";
-                PrintMatrix();
+            label1.Text = "Palavra nao reconhecida";
 
-            //TODO: Popular matriz! (O algoritmo em si, vai lá gosantos, ritmo de festa!)
+            foreach (string startingRule in cykMatrix[0, wordCount - 1]) //Posicao da regra inicial, se existe
+            {
+                if (mGrammar.IsStartingRule(startingRule))
+                {
+                    label1.Text = "Palavra reconhecida com sucesso!";
+                    break;
+                }
+            }
+            PrintMatrix();
 
         }
 
@@ -87,7 +138,7 @@ namespace CYK
         {
             for (int i = wordCount - 1; i >= 0; i--)
             {
-                for (int n = wordCount - 1; n >= 0; n--)
+                for (int n = 0; n < wordCount; n++)
                 {
                     if (cykMatrix[n, i].Count == 0)
                         textBox2.Text += " . ";
