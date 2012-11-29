@@ -16,3 +16,12 @@ D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Form1.resources
 D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
 D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.exe
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.pdb
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\bin\Debug\CYK.exe
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\bin\Debug\CYK.pdb
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.Form1.resources
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+\\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
