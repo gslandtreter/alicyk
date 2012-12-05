@@ -25,3 +25,21 @@ D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.write.1.t
 \\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
 \\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
 \\HOMES\gslandtreter\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.exe
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.pdb
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\bin\Debug\CYK.exe
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\bin\Debug\CYK.pdb
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.Form1.resources
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+\\HOMES\gvschwade\Windows Config\Desktop\alicyk-master\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CYK.exe
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CYK.pdb
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\bin\Debug\CYK.exe
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\bin\Debug\CYK.pdb
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CYK.Form1.resources
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\GenerateResource.write.1.tlog

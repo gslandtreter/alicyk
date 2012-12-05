@@ -6,7 +6,6 @@ Inicial
 { S }							# Os simbolos terminais sao qualquer sequencia de caracteres 
 Regras						# (nao reservados) entre chaves. Os elementos do conjunto sao separados por virgula.
 { S > NP , VP } ;1				# A secao de simbolos terminais inicia com a palavra-chave "Terminais".
-{ NP > DT , N } ;1				# Eh altamente recomendavel que simbolos terminais iniciem por caracteres minusculos.
 { N > dog } ;0.3				# Simbolos nao podem conter os caracteres "{", "}", "#" ou ">", por serem reservados
 { N > cat } ;0.3				  	# A secao de variaveis inicia por "Variaveis", e eh a segunda do arquivo
 { N > meat } ;0.4				# Note que a sintaxe eh case-sensitive, isto eh, maiusculas e minusculas sao 

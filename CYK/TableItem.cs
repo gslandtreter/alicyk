@@ -5,13 +5,14 @@ using System.Text;
 
 namespace CYK
 {
-    class TableItem
+    public class TableItem
     {
         public int index;
 
         public List<string> ruleNames;
         public double probability;
         public bool isTerminal;
+        public string ruleName;
 
         public TableItem leftChild;
         public TableItem rightChild;
