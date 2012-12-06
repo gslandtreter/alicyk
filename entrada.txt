@@ -1,7 +1,7 @@
 Terminais					# A secao de simbolos terminais eh a primeira do arquivo.
 { runs, barks, eats, dog, cat, meat, the, a }	# Tudo o que estiver apos o sustenido (#)  sera considerado comentario. 
 Variaveis				    	
-{ N, V, NP, DT, VP, S }			  	
+{ N, V, NP, DT, VP, S , A , B , C , D}			  	
 Inicial					
 { S }							# Os simbolos terminais sao qualquer sequencia de caracteres 
 Regras						# (nao reservados) entre chaves. Os elementos do conjunto sao separados por virgula.
@@ -19,3 +19,8 @@ Regras						# (nao reservados) entre chaves. Os elementos do conjunto sao separa
 { V > eats } ;0.25				# a fim de definir-se a fronteira entre dois simbolos.
 { DT > a } ;0.45				# As regras de producao devem seguir as restricoes de uma GLC.
 { DT > the } ;0.55				# Linhas em branco entre as secoes e entre os itens nao serao toleradas.
+{ S > A , B } ;0.13
+{ A > a } ;0.4
+{ B > C , D} ;0.58
+{ C > dog } ;0.21
+{ D > barks } ;0.99

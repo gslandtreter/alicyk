@@ -13,7 +13,6 @@ namespace CYK
     public partial class Form1 : Form
     {
         string fileName;
-        //TableItem[,] cykMatrix;
         Table[,] cykTable;
         int wordCount;
         Grammar mGrammar;
@@ -21,7 +20,6 @@ namespace CYK
         public Form1()
         {
             InitializeComponent();
-
             openFileDialog1.ShowDialog();
         }
 
@@ -66,6 +64,8 @@ namespace CYK
                 {
                     TableItem newItem = new TableItem();
                     newItem.ruleName = rule.name;
+                    newItem.probability = rule.probability;
+                    newItem.index = r;
                     cykTable[r, 0].items.Add(newItem);
                 }
             }
@@ -134,8 +134,6 @@ namespace CYK
                         }
 
                         /*TODO:
-                         * - Arvores de Derivacao
-                         * - Calculo de Probabilidade
                          * - Bora fazer alguma coisa gosantos
                          * - quero churros
                          */
@@ -152,7 +150,8 @@ namespace CYK
                 label1.Text = "Palavra reconhecida com sucesso!";
 
                 //TODO: Refazer arvores de derivacao com base na nova estrutura da tabela.
-                //textBox2.Text += "\r\n\r\n" + cykMatrix[0, wordCount - 1].GetDerivationTree(words);
+                textBox2.Text += "\r\n\r\n" + item.GetDerivationTree(words);
+                textBox2.Text += " - Probabilidade: " + item.GetTreeProbability() + "\r\n";
             }
         }
 

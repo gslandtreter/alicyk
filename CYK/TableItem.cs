@@ -27,22 +27,19 @@ namespace CYK
         public string GetDerivationTree(string[] terminals)
         {
             if (this.leftChild == null && this.rightChild == null)
-            {
-                if (this.isTerminal)
-                {
-                    foreach (string rule in this.ruleNames)
-                        return rule + "[" + terminals[this.index] + "]";
-                }
-
-                else
-                    return string.Empty;
-            }
+                    return this.ruleName + "[" + terminals[this.index] + "]";
 
             else
-                foreach (string rule in this.ruleNames)
-                    return rule + "[" + this.leftChild.GetDerivationTree(terminals) + " " + this.rightChild.GetDerivationTree(terminals) + "]";
+                return this.ruleName + "[" + this.leftChild.GetDerivationTree(terminals) + " " + this.rightChild.GetDerivationTree(terminals) + "]";
+        }
 
-            return String.Empty;
+        public double GetTreeProbability()
+        {
+            if (this.leftChild == null && this.rightChild == null)
+                return this.probability;
+
+            else
+                return this.probability * this.leftChild.GetTreeProbability() * this.rightChild.GetTreeProbability();
         }
     }
 
