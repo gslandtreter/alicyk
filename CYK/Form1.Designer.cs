@@ -37,7 +37,9 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileName = "entrada.txt";
+            this.openFileDialog1.Filter = "Arquivos de Texto|*.txt";
+            this.openFileDialog1.Title = "Selecione o arquivo de entrada";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // textBox1
@@ -54,7 +56,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 22);
             this.button1.TabIndex = 1;
-            this.button1.Text = "DO NOT PRESS";
+            this.button1.Text = "Do it!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -72,6 +74,7 @@
             this.textBox2.Location = new System.Drawing.Point(25, 50);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox2.Size = new System.Drawing.Size(330, 234);
             this.textBox2.TabIndex = 3;
             // 
@@ -84,8 +87,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Alicyk";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

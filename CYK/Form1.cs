@@ -132,11 +132,6 @@ namespace CYK
                                 }
                             }
                         }
-
-                        /*TODO:
-                         * - Bora fazer alguma coisa gosantos
-                         * - quero churros
-                         */
                     }
                 }
             }
@@ -149,9 +144,8 @@ namespace CYK
             {
                 label1.Text = "Palavra reconhecida com sucesso!";
 
-                //TODO: Refazer arvores de derivacao com base na nova estrutura da tabela.
-                textBox2.Text += "\r\n\r\n" + item.GetDerivationTree(words);
-                textBox2.Text += " - Probabilidade: " + item.GetTreeProbability() + "\r\n";
+                textBox2.Text += "\r\n" + item.GetDerivationTree(words);
+                textBox2.Text += " - Probabilidade: " + item.GetTreeProbability() + "\r\n\r\n";
             }
         }
 
@@ -166,8 +160,14 @@ namespace CYK
 
                     else
                     {
-                        foreach (TableItem rule in cykTable[n, i].items)
-                            textBox2.Text += " " + rule.ruleName;
+                        for (int j = 0; j < cykTable[n, i].items.Count; j++)
+                        {
+                            if(j == 0)
+                                textBox2.Text += cykTable[n, i].items[j].ruleName;
+                            else
+                                textBox2.Text += "," + cykTable[n, i].items[j].ruleName;
+                        }
+                        textBox2.Text += "  ";
                     }
                 }
                 textBox2.Text += "\r\n";
@@ -185,7 +185,12 @@ namespace CYK
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DoProcessing();
+            textBox2.Clear();
+
+            if (mGrammar != null)
+                DoProcessing();
+            else
+                openFileDialog1.ShowDialog();
         }
     }
 }
