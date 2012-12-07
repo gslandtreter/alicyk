@@ -43,3 +43,12 @@ C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CY
 C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
 C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\gslandtreter\Downloads\alicyk-master\alicyk-master\CYK\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\CYK.exe
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\CYK.pdb
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\bin\Debug\CYK.exe
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\bin\Debug\CYK.pdb
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Form1.resources
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\CYK.Properties.Resources.resources
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Guilherme\Documents\GitHub\alicyk\CYK\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -50,9 +50,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(36, 48);
+            this.button1.Location = new System.Drawing.Point(244, 22);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 100);
+            this.button1.Size = new System.Drawing.Size(111, 22);
             this.button1.TabIndex = 1;
             this.button1.Text = "DO NOT PRESS";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,26 +61,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(113, 192);
+            this.label1.Location = new System.Drawing.Point(168, 295);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Texto";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(364, 12);
+            this.textBox2.Location = new System.Drawing.Point(25, 50);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(458, 333);
+            this.textBox2.Size = new System.Drawing.Size(330, 234);
             this.textBox2.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 541);
+            this.ClientSize = new System.Drawing.Size(380, 317);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
