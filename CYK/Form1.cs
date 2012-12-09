@@ -138,11 +138,11 @@ namespace CYK
 
             PrintMatrix();
 
-            label1.Text = "Palavra nao reconhecida";
+            label1.Text = "Frase nao reconhecida";
 
             foreach (TableItem item in cykTable[0,wordCount-1].items.FindAll(x=>x.ruleName.Equals(mGrammar.startingRule)))
             {
-                label1.Text = "Palavra reconhecida com sucesso!";
+                label1.Text = "Frase reconhecida com sucesso!";
 
                 textBox2.Text += "\r\n" + item.GetDerivationTree(words);
                 textBox2.Text += " - Probabilidade: " + item.GetTreeProbability() + "\r\n\r\n";

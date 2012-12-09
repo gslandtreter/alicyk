@@ -1,0 +1,9 @@
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\bin\Release\CYK.exe
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\bin\Release\CYK.pdb
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\CYK.Form1.resources
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\CYK.Properties.Resources.resources
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\CYK.exe
+D:\Gustavo\Documentos\GitHub\alicyk\CYK\obj\x86\Release\CYK.pdb
